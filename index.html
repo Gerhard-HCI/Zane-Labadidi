@@ -1361,8 +1361,7 @@ main {
     <div class="util-body" style="padding-top:6px;padding-bottom:8px">
       <div class="rest-row"><div class="rest-l"><div class="rest-name">VIP Toyosu Fish Market</div><div class="rest-meta">Auction-floor access · 25 May · 05:00</div></div><div class="rest-r"><span class="badge confirmed">Confirmed</span></div></div>
       <div class="rest-row"><div class="rest-l"><div class="rest-name">Kagurazaka Walking Tour</div><div class="rest-meta">Bilingual guide · 24 May · 10:30</div></div><div class="rest-r"><span class="badge confirmed">Confirmed</span></div></div>
-      <div class="rest-row"><div class="rest-l"><div class="rest-name">Grand Sumo · Senshūraku</div><div class="rest-meta">Ryōgoku Kokugikan · 24 May</div></div><div class="rest-r"><span class="badge requested">Requested</span></div></div>
-      <div class="rest-row"><div class="rest-l"><div class="rest-name">Geisha &amp; Kimono</div><div class="rest-meta">Private session · Asakusa · 27 May · 15:00</div></div><div class="rest-r"><span class="badge requested">Requested</span></div></div>
+      <div class="rest-row"><div class="rest-l"><div class="rest-name">Geisha House Visit</div><div class="rest-meta">Asakusa · 24 May · 18:30 · ~1 hour</div></div><div class="rest-r"><span class="badge confirmed">Confirmed</span></div></div>
     </div>
   </div>
 
@@ -1387,9 +1386,9 @@ main {
         <span>Settled in full · Outstanding balance $0</span>
       </div>
       <p style="font-size:11.5px; color: var(--cream-dim); margin-top:12px; line-height:1.55; font-style: italic;">
-        Sumo tickets are billed separately on confirmation. Out-of-pocket items
-        (sake supplements, beverage pairings, gratuities) settle at each venue.
-        Hotels, flights, Shinkansen and the Hokkaido week are not included.
+        Out-of-pocket items (sake supplements, beverage pairings, gratuities)
+        settle at each venue. Hotels, flights, Shinkansen and the Hokkaido week
+        are not included.
       </p>
     </div>
   </div>
@@ -1708,7 +1707,7 @@ const TRIP = {
       ]
     },
 
-    /* ─────── DAY 02 · SUN 24 MAY · KAGURAZAKA & SUMO ─────── */
+    /* ─────── DAY 02 · SUN 24 MAY · KAGURAZAKA & GEISHA HOUSE ─────── */
     {
       n: 2,
       date: '2026-05-24',
@@ -1730,17 +1729,16 @@ const TRIP = {
           note: 'Comfortable shoes. Light layers — the alleys are cool even in late May.'
         },
         {
-          group: 'Afternoon',
-          time: '14:00',
-          timeSoft: 'aprx',
-          title: 'Grand Sumo · Natsu Basho',
+          group: 'Evening',
+          time: '18:30',
+          title: 'Geisha House · Asakusa',
           type: 'activity',
-          loc: 'Ryōgoku Kokugikan',
-          mapsQ: 'Ryogoku Kokugikan',
-          meta: 'Senshūraku · 2 guests',
-          badge: { kind: 'requested', label: 'Requested' },
-          desc: "The final Sunday of the May Grand Tournament — senshūraku — is the most charged afternoon in the sumo calendar. The yokozuna line up against the upper sanyaku; trophies are presented in the ring at the close.",
-          note: 'Box seats actively pursued — confirmation flows through the WhatsApp group. A chankonabe stop near the stadium can be added on the day.'
+          loc: 'Asakusa, Tokyo',
+          mapsQ: 'Asakusa Tokyo',
+          meta: 'Private visit · ~1 hour · 2 guests',
+          badge: { kind: 'confirmed', label: 'Confirmed' },
+          desc: "A private visit to a working geisha house bar in Asakusa — drinks at the counter, time in the room with a geiko and a maiko: shamisen and singing, ozashiki games, and easy conversation. No kimono dressing. A discreet bilingual interpreter is present throughout. About an hour, then on to Shinohara.",
+          note: 'A small fee is paid privately to the house at the end of the session, <strong>in cash</strong>.'
         },
         {
           group: 'Dinner',
@@ -1873,18 +1871,6 @@ const TRIP = {
           badge: { kind: 'solo', label: 'Solo' },
           desc: "A second great solo sushi seat for Zane. Hatou-san is the rare counter that can sit comfortably alongside Sugita and Mitani at the very top of edomae lunches in Tokyo, with a slightly more open dialogue between chef and guest. The friend has a separate plan for the early afternoon.",
           note: 'No fragrance. Photography of the food only, not the chef.'
-        },
-        {
-          group: 'Afternoon',
-          time: '15:00',
-          title: 'Geisha & Kimono',
-          type: 'activity',
-          loc: 'Asakusa, Tokyo',
-          mapsQ: 'Asakusa Tokyo',
-          meta: 'Private session · 2 guests',
-          badge: { kind: 'requested', label: 'Requested' },
-          desc: "A private session arranged through a working geisha house in Asakusa — kimono dressing first, then time with a geiko and a maiko in a tatami room: shamisen and a simple dance, ozashiki games, and a tea service. A discreet bilingual interpreter is present throughout.",
-          note: 'A small fee is paid privately to the house at the end of the session, <strong>in cash</strong>.'
         },
         {
           group: 'Dinner',
